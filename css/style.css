@@ -38,15 +38,18 @@ img {
   max-width: 100%;
   height: auto;
 }
+.header{
+  position: absolute;
+  width: 100%;
+  top: 56px;
+}
 .header__nav {
   display: flex;
   justify-content: space-between;
-  position: relative;
   margin: 0 auto;
   padding: 0 20px;
-  top: 54px;
   max-width: 1280px;
-  height: 24px;
+  width: 100%;
   font-family: "sfprodisplay";
   font-weight: 400;
 }
@@ -64,7 +67,7 @@ img {
   font-size: 18px;
   text-decoration: none;
 }
-.logo {
+.logo__img {
   width: 170px;
   height: 24px;
   transform: translateX(12px);
@@ -107,7 +110,7 @@ img {
   position: relative;
   transform: translateX(200px);
 }
-.photograhpers-info {
+.photograhper-info {
   width: 100%;
   height: 18px;
   display: flex;
@@ -128,7 +131,7 @@ img {
   margin: 0 auto;
   padding: 0 20px;
 }
-.photographers-info__label {
+.photographer-info__label {
   display: flex;
   width: 142px;
   height: 18px;
@@ -136,12 +139,15 @@ img {
   font-weight: 400;
   font-size: 18px;
 }
-.photographers-info__number {
+.photographer-info__number {
   display: flex;
   height: 18px;
   width: 102px;
   color: rgba(242, 242, 242, 1);
   justify-content: flex-end;
+}
+.visually-hidden{
+  color: #ffffff;
 }
 .contact {
   background-image: url("/images/contact-page-cover.jpg");
@@ -184,6 +190,9 @@ img {
   position: relative;
   transform: translateY(-23px);
 }
+.underlined{
+  text-decoration: underline;
+}
 .contact__text {
   font-family: "sfprodisplay";
   font-weight: 100;
@@ -201,7 +210,7 @@ img {
 }
 /* код для About */
 .site-wrap {
-  overflow-x: hidden;
+  overflow: hidden;
 }
 .about {
   background-image: url("/images/about-cover.jpg");
@@ -234,10 +243,11 @@ img {
   position: relative;
   margin: 0 auto;
   z-index: 1;
-  transform: translateY(48%);
+  top: 122px;
 }
 .background {
   color: rgba(141, 141, 141, 1);
+  top: 92px;
 }
 .job-name {
   font-family: "sfprodisplay";
@@ -266,7 +276,7 @@ img {
   margin: 0 auto;
   justify-content: space-between;
   margin-bottom: 274px;
-  transform: translateY(300%);
+  top: 168px;
 }
 
 .info__wrap {
@@ -274,38 +284,84 @@ img {
   flex-direction: column;
   justify-content: space-between;
 }
-.images__wrap{
+.images__wrap {
   position: relative;
   transform: translateY(169px);
 }
 .background-wrap {
   display: flex;
 }
-.photo--2{
+.photo--2 {
   margin-bottom: 92px;
 }
 .photo--3 {
   position: relative;
-  transform: translateX(23%);
+  left: 235px;
+  top: -60px;
 }
-.photo--4{
+.photo--4 {
   margin-top: 200px;
+  position: relative;
+  bottom: 60px;
 }
-.photo--5{
-  position:relative;
+.photo--5 {
+  position: relative;
   width: 575px;
   height: 886px;
-  margin-left:777px;
-  transform: translateY(5%);
-  margin-top: 279px;
+  left: 777px;
+  top: 417px;
 }
-.photo--6{
-  margin-left: 88px;
+.photo--6 {
+  position: relative;
+  left: 88px;
+  top: 85px;
 }
-.photo--7{
-  position: absolute;
-  margin-left: 707px;
-  width: 575px;
-  height: 886px;
-  transform: translateY(-34%);
+.photo--7 {
+  position: relative;
+  left: 707px;
+  bottom: 160px;
+}
+.background-texts {
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  z-index: 0;
+  position: relative;
+  top: 292px;
+}
+.text--1 {
+  -webkit-text-fill-color: transparent; /* Will override color (regardless of order) */
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: #8d8d8d;
+  font-size: 260px;
+  font-weight: 200;
+}
+.text--2 {
+  -webkit-text-fill-color: transparent; /* Will override color (regardless of order) */
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: #8d8d8d;
+  font-size: 260px;
+  font-weight: 200;
+}
+.text--3 {
+  font-size: 260px;
+  font-weight: 200;
+}
+.img--1 {
+  width: 540.9px;
+  height: 833.11px;
+  rotate: 6.85deg;
+  z-index: 1;
+  position: relative;
+  left: 450px;
+  bottom: 515px;
+}
+.img--2 {
+  width: 540.9px;
+  height: 833.11px;
+  rotate: -3deg;
+  z-index: 1;
+  position: relative;
+  left: 746px;
+  bottom: 488px;
 }
