@@ -42,6 +42,7 @@ img {
   position: absolute;
   width: 100%;
   top: 56px;
+  left: 0px;
 }
 .header__nav {
   display: flex;
@@ -110,7 +111,7 @@ img {
 }
 .photographer--3 {
   position: relative;
-  transform: translateX(200px);
+  left: 200px;
 }
 .photograhper-info {
   width: 100%;
@@ -190,7 +191,7 @@ img {
   display: flex;
   justify-content: center;
   position: relative;
-  transform: translateY(-23px);
+  bottom: 23px;
 }
 .underlined{
   text-decoration: underline;
@@ -366,4 +367,7 @@ img {
   position: relative;
   left: 746px;
   bottom: 488px;
+}
+.hidden-text{
+  color: #ffffff;
 }
