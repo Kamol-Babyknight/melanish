@@ -192,6 +192,7 @@ img {
   justify-content: center;
   position: relative;
   bottom: 23px;
+  text-transform: uppercase;
 }
 .underlined{
   text-decoration: underline;
@@ -257,6 +258,7 @@ img {
   color: #d6d0ce;
   font-weight: 100;
   font-size: 16px;
+  text-transform: uppercase;
 }
 .performer-name {
   font-family: "nymphatrial";
