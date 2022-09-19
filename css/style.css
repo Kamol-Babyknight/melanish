@@ -296,32 +296,32 @@ img {
 .background-wrap {
   display: flex;
 }
-.photo--2 {
+.images__photo--2 {
   margin-bottom: 92px;
 }
-.photo--3 {
+.images__photo--3 {
   position: relative;
   left: 235px;
   top: -60px;
 }
-.photo--4 {
+.images__photo--4 {
   margin-top: 200px;
   position: relative;
   bottom: 60px;
 }
-.photo--5 {
+.images__photo--5 {
   position: relative;
   width: 575px;
   height: 886px;
   left: 777px;
   top: 417px;
 }
-.photo--6 {
+.images__photo--6 {
   position: relative;
   left: 88px;
   top: 85px;
 }
-.photo--7 {
+.images__photo--7 {
   position: relative;
   left: 707px;
   bottom: 160px;
@@ -352,7 +352,7 @@ img {
   font-size: 260px;
   font-weight: 200;
 }
-.img--1 {
+.images__photo--8 {
   width: 540.9px;
   height: 833.11px;
   rotate: 6.85deg;
@@ -361,7 +361,7 @@ img {
   left: 450px;
   bottom: 515px;
 }
-.img--2 {
+.images__photo--9 {
   width: 540.9px;
   height: 833.11px;
   rotate: -3deg;
