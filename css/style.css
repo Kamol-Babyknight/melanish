@@ -38,7 +38,7 @@ img {
   max-width: 100%;
   height: auto;
 }
-.header{
+.header {
   position: absolute;
   width: 100%;
   top: 56px;
@@ -60,6 +60,7 @@ img {
   color: rgba(242, 242, 242, 1);
   font-size: 18px;
   text-decoration: none;
+  text-transform: uppercase;
 }
 .header__connection {
   color: rgba(242, 242, 242, 1);
@@ -67,6 +68,7 @@ img {
   height: 18px;
   font-size: 18px;
   text-decoration: none;
+  text-transform: uppercase;
 }
 .logo__img {
   width: 170px;
@@ -106,7 +108,7 @@ img {
   position: relative;
   right: 300px;
 }
-.photographer--2{
+.photographer--2 {
   transform: translate(-4px, -1px);
 }
 .photographer--3 {
@@ -149,7 +151,7 @@ img {
   color: rgba(242, 242, 242, 1);
   justify-content: flex-end;
 }
-.visually-hidden{
+.visually-hidden {
   color: #ffffff;
 }
 .contact {
@@ -194,7 +196,7 @@ img {
   bottom: 23px;
   text-transform: uppercase;
 }
-.underlined{
+.underlined {
   text-decoration: underline;
 }
 .contact__text {
@@ -222,24 +224,14 @@ img {
   background-size: cover;
   background-repeat: no-repeat;
 }
-
-.images__main-img {
-  width: 1268px;
-  height: 844px;
-  position: relative;
+.editorial__hero-wrap {
+  display: flex;
   margin: 0 auto;
-  z-index: 0;
+  flex-direction: column;
+  position: relative;
+  top: 190px;
 }
-.images__same--1 {
-  width: 1029px;
-  height: 707px;
-  margin-left: 88px;
-}
-.images__same--2 {
-  width: 575px;
-  height: 886px;
-}
-.images__main-title {
+.about-title {
   font-family: "nymphatrial";
   color: rgba(255, 255, 255, 1);
   font-size: 220px;
@@ -249,18 +241,40 @@ img {
   z-index: 1;
   top: 122px;
 }
-.background {
-  color: rgba(141, 141, 141, 1);
-  top: 92px;
+.about__main-img {
+  width: 1268px;
+  height: 844px;
+  position: relative;
+  margin: 0 auto;
+  z-index: 0;
+  display: flex;
 }
-.job-name {
+.preview__photo {
+  position: relative;
+}
+.preview__title-wrap {
+  display: flex;
+  top: 162px;
+  position: relative;
+}
+.about-title--gray {
+  color: rgba(141, 141, 141, 1);
+}
+
+.members__wrap {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+.members__job-name {
   font-family: "sfprodisplay";
   color: #d6d0ce;
   font-weight: 100;
   font-size: 16px;
   text-transform: uppercase;
 }
-.performer-name {
+.members__performer-name {
   font-family: "nymphatrial";
   color: #d6d0ce;
   font-weight: 100;
@@ -273,7 +287,7 @@ img {
   margin-bottom: 93px;
   transform: translateY(15%);
 }
-.info {
+.members {
   width: 584px;
   height: 56px;
   display: flex;
@@ -283,12 +297,6 @@ img {
   margin-bottom: 274px;
   top: 168px;
 }
-
-.info__wrap {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-}
 .images__wrap {
   position: relative;
   transform: translateY(169px);
@@ -296,37 +304,51 @@ img {
 .background-wrap {
   display: flex;
 }
-.images__photo--2 {
+.preview__photo--2 {
   margin-bottom: 92px;
+  width: 1029px;
+  height: 707px;
+  margin-left: 86px;
+  top: 284px;
 }
-.images__photo--3 {
+.preview__photo--3 {
   position: relative;
-  left: 235px;
-  top: -60px;
+  left: 236px;
+  top: 132px;
+  width: 1029px;
+  height: 707px;
+  margin-left: 88px;
 }
-.images__photo--4 {
+.preview__photo--4 {
   margin-top: 200px;
   position: relative;
-  bottom: 60px;
+  bottom: -133px;
+  width: 1029px;
+  height: 707px;
+  margin-left: 86px;
 }
-.images__photo--5 {
+.preview__photo--5 {
   position: relative;
   width: 575px;
   height: 886px;
-  left: 777px;
-  top: 417px;
+  left: 778px;
+  top: 412px;
 }
-.images__photo--6 {
+.preview__photo--6 {
   position: relative;
-  left: 88px;
-  top: 85px;
+  left: 87px;
+  top: 76px;
+  width: 575px;
+  height: 886px;
 }
-.images__photo--7 {
+.preview__photo--7 {
   position: relative;
-  left: 707px;
-  bottom: 160px;
+  left: 706px;
+  bottom: 168px;
+  width: 575px;
+  height: 886px;
 }
-.background-texts {
+.preview-slider__titles {
   display: flex;
   flex-direction: column;
   align-content: center;
@@ -334,43 +356,43 @@ img {
   position: relative;
   top: 292px;
 }
-.text--1 {
+.about-title--transparent {
   -webkit-text-fill-color: transparent; /* Will override color (regardless of order) */
   -webkit-text-stroke-width: 1px;
   -webkit-text-stroke-color: #8d8d8d;
   font-size: 260px;
   font-weight: 200;
 }
-.text--2 {
+.about-title--transparent {
   -webkit-text-fill-color: transparent; /* Will override color (regardless of order) */
   -webkit-text-stroke-width: 1px;
   -webkit-text-stroke-color: #8d8d8d;
   font-size: 260px;
   font-weight: 200;
 }
-.text--3 {
+.about-title--white {
   font-size: 260px;
   font-weight: 200;
+  position: relative;
+  top: 115px;
 }
-.images__photo--8 {
+.preview-slider__img--1 {
   width: 540.9px;
-  height: 833.11px;
   rotate: 6.85deg;
   z-index: 1;
   position: relative;
   left: 450px;
-  bottom: 515px;
+  bottom: 520px;
 }
-.images__photo--9 {
-  width: 540.9px;
-  height: 833.11px;
+.preview-slider__img--2 {
+  width: 561px;
   rotate: -3deg;
   z-index: 1;
   position: relative;
-  left: 746px;
+  left: 749px;
   bottom: 488px;
 }
-.visually-hidden{
+.visually-hidden {
   position: absolute;
   width: 1px;
   height: 1px;
@@ -381,4 +403,54 @@ img {
   clip-path: inset(100%);
   clip: rect(0 0 0 0);
   overflow: hidden;
+}
+.preview-slider__images {
+  display: flex;
+}
+.next-project__wrap {
+  position: relative;
+}
+.next-project__img--1 {
+  display: flex;
+  width: 410.47px;
+  height: 505px;
+  z-index: 3;
+  position: relative;
+  rotate: -4.05deg;
+  top: 191px;
+  left: 516px;
+}
+.next-project__img--2 {
+  display: flex;
+  width: 356.97px;
+  height: 439.17px;
+  z-index: 2;
+  position: relative;
+  rotate: 6.92deg;
+  bottom: 339px;
+  left: 268px;
+}
+.next-project__img--3 {
+  display: flex;
+  width: 356.97px;
+  height: 439.17px;
+  z-index: 1;
+  position: relative;
+  rotate: -8.2deg;
+  bottom: 665px;
+  left: 807px;
+}
+.next-project__name{
+  display: flex;
+  position: relative;
+  z-index: 4;
+  bottom: 1009px;
+}
+.next-project__text {
+  color: #ffffff;
+  font-family: "nymphatrial";
+  font-weight: 200;
+  font-size: 154px;
+  display: flex;
+  margin: 0 auto;
 }
