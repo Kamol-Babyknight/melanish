@@ -1,0 +1,68 @@
+.photographer__name {
+    position: absolute;
+    font-size: rem(120);
+    color: rgba(255, 255, 255, 1);
+    font-family: "nymphatrial";
+    font-weight: 400;
+    height: rem(133);
+    top: rem(460);
+  }
+  .photographer__name--large {
+    font-size: rem(154);
+    top: rem(440);
+    left: rem(-45);
+  }
+  .photographer__img {
+    height: rem(518);
+    display: flex;
+    @include scalable-height{
+      height: vh(518);
+    }
+  }
+  .photographer--1 {
+    position: relative;
+    right: rem(300);
+  }
+  .photographer--2{
+    position: relative;
+  }
+
+  .photographer--3 {
+    position: relative;
+    left: rem(200);
+  }
+  .photographer-info {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    margin: 0 auto;
+    padding: 0 rem(20);
+    position: absolute;
+    bottom: rem(25);
+    font-family: "sfprodisplay";
+    font-weight: 400;
+    font-size: rem(18);
+  }
+  .photographer-info__wrap {
+    max-width: rem(1280);
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    margin: 0 auto;
+    padding: 0 rem(20);
+  }
+  .photographer-info__label {
+    display: flex;
+    width: rem(142);
+    height: rem(18);
+    color: rgba(242, 242, 242, 1);
+    font-weight: 400;
+    font-size: rem(18);
+  }
+  .photographer-info__number {
+    display: flex;
+    height: rem(18);
+    width: rem(102);
+    color: rgba(242, 242, 242, 1);
+    justify-content: flex-end;
+  }

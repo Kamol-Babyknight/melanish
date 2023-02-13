@@ -4,11 +4,12 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="/css/style.css" />
+    <link rel="stylesheet" href="/css/styles.css" />
     <title>Contact Page</title>
   </head>
-  <body class="site">
-    <header class="header">
+  <body>
+    <div class="site-container">
+      <header class="header">
         <nav class="header__nav">
           <div class="header__info-wrap">
             <a href="#" class="header__info">about</a>
@@ -24,14 +25,13 @@
             <a href="#" class="header__connection">contact</a>
           </div>
         </nav>
-    </header>
-    <main class="site__main">
+      </header>
       <section class="photographers">
         <div class="photographers__wrap">
           <div class="photographer photographer--1">
             <div class="photographer__img">
               <img
-                class="photographer__img"
+                class="photographer__photo"
                 src="/images/bruxells-2xjpg.jpg"
                 alt="Bruxells"
               />
@@ -39,9 +39,9 @@
             <h2 class="photographer__name">Bruxells</h2>
           </div>
           <div class="photographer photographer--2">
-            <div class="photographer__img" >
+            <div class="photographer__img">
               <img
-                class="photographer__img"
+                class="photographer__photo"
                 src="/images/melanie-2x.jpg"
                 alt="Melanie"
               />
@@ -53,7 +53,7 @@
           <div class="photographer photographer--3">
             <div class="photographer__img">
               <img
-                class="photographer__img"
+                class="photographer__photo"
                 src="/images/problem-2x.jpg"
                 alt="Problem"
               />
@@ -72,11 +72,9 @@
           </div>
         </div>
       </section>
-    </main>
-    <footer class="site-footer">
-      <h2 class="visually-hidden">
-        index footer
-      </h2>
-    </footer>
+      <footer class="site-footer">
+        <h2 class="visually-hidden">index footer</h2>
+      </footer>
+    </div>
   </body>
 </html>

@@ -1,0 +1,11 @@
+@mixin scalable-desktop {
+  @media (min-width: $min-desktop-size) and (max-width: $base-desktop-size) {
+    @content;
+  }
+}
+
+@mixin scalable-height {
+  @media (min-width: $min-desktop-size) and (max-width: $base-desktop-size){
+    @content;
+  }
+}

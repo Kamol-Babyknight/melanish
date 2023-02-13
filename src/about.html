@@ -5,36 +5,24 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>About</title>
-    <link rel="stylesheet" href="/css/style.css" />
+    <link rel="stylesheet" href="/css/styles.css" />
   </head>
   <body class="about">
     <div class="site-wrap">
-      <header class="header">
-        <nav class="header__nav">
-          <div class="header__info-wrap">
-            <a href="#" class="header__info">about</a>
-          </div>
-          <div class="logo">
-            <img
-              src="/images/melanish-logo.svg"
-              alt="site-logo"
-              class="logo__img"
-            />
-          </div>
-          <div class="header__contact-wrap">
-            <a href="#" class="header__connection">contact</a>
-          </div>
-        </nav>
-      </header>
+      @@include('components/header.html')
       <main class="about__content">
         <section class="editorial">
           <div class="editorial__hero-wrap">
-            <h1 class="about-title">Editorial</h1>
-            <img
-              src="/images/about/main-img.jpg"
-              alt=""
-              class="about__main-img"
-            />
+            <div class="about__title-wrap">
+              <h1 class="about-title">Editorial</h1>
+            </div>
+            <div class="about__main-img-wrap">
+              <img
+                src="/images/about/main-img.jpg"
+                alt=""
+                class="about__main-img"
+              />
+            </div>
           </div>
           <div class="members">
             <div class="members__wrap">
@@ -134,9 +122,7 @@
           </div>
         </section>
       </main>
-      <footer class="site-footer">
-        <h2 class="visually-hidden">Site footer content</h2>
-      </footer>
+      @@include('components/footer.html')
     </div>
   </body>
 </html>

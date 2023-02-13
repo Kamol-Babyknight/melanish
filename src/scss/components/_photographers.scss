@@ -1,0 +1,12 @@
+.photographers {
+  position: absolute;
+  top: rem(239);
+  overflow: hidden;
+  height: rem(750);
+  width: 100%;
+  left: 0;
+}
+.photographers__wrap {
+  display: flex;
+  justify-content: space-between;
+}

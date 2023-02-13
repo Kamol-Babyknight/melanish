@@ -1,0 +1,58 @@
+.contact {
+    background-image: url("/images/contact-page-cover.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+  .contact__info {
+    position: relative;
+    margin: 0 auto;
+    width: rem(576);
+    height: rem(454);
+    transform: translateY(35%);
+  }
+  .contact__wrap {
+    max-width: rem(576);
+    height: rem(454);
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: space-between;
+  }
+  .contact__contact {
+    display: flex;
+    font-family: "nymphatrial";
+    font-weight: 400;
+    font-size: rem(154);
+    color: #ffffff;
+    position: relative;
+    justify-content: center;
+  }
+  .contact__mail {
+    font-family: "sfprodisplay";
+    font-weight: 100;
+    font-size: rem(50);
+    text-decoration: none;
+    color: rgba(242, 242, 242, 0.7);
+    display: flex;
+    justify-content: center;
+    position: relative;
+    bottom: rem(23);
+    text-transform: uppercase;
+  }
+
+  .contact__text {
+    font-family: "sfprodisplay";
+    font-weight: 100;
+    font-size: rem(24);
+    color: #ffffff;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+  }
+  .contact__line {
+    transform: translateY(rem(-10));
+    width: rem(330);
+    height: rem(1);
+    background-color: rgba(255, 255, 255, 0.41);
+  }

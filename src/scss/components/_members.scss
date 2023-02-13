@@ -1,0 +1,27 @@
+.members__wrap {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .members__job-name {
+    font-family: "sfprodisplay";
+    color: #d6d0ce;
+    font-weight: 100;
+    font-size: rem(16);
+    text-transform: uppercase;
+  }
+  .members__performer-name {
+    font-family: "nymphatrial";
+    color: #d6d0ce;
+    font-weight: 100;
+    font-size: rem(24);
+  }
+  .members {
+    width: rem(584);
+    height: rem(56);
+    display: flex;
+    margin: 0 auto;
+    justify-content: space-between;
+    margin-bottom: rem(274);
+  }
