@@ -1,48 +1,26 @@
 .about {
-    background-image: url("/images/about-cover.jpg");
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
-  }
-.about__title-wrap{
-  position:absolute;
+  background-image: url("/images/about-cover.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.about__title-wrap {
+  position: absolute;
   top: rem(312);
   display: flex;
-  
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 1;
 }
-  .about-title {
-    font-family: "nymphatrial";
-    color: rgba(255, 255, 255, 1);
-    font-size: rem(220);
-    font-weight: 400;
-    z-index: 1;
+.about__main-img-wrap {
+  width: rem(1268);
+  height: rem(844);
+  margin: 0 auto;
+  z-index: 0;
+  display: flex;
+  
+  @include scalable-height{
+    
   }
-  .about__main-img-wrap{
-    width: rem(1268);
-    height: rem(844);
-    margin: 0 auto;
-    z-index: 0;
-    display: flex;
-  }
-  .about-title--transparent {
-    -webkit-text-fill-color: transparent; /* Will override color (regardless of order) */
-    -webkit-text-stroke-width: 1px;
-    -webkit-text-stroke-color: #8d8d8d;
-    font-size: rem(260);
-    font-weight: 200;
-  }
-  .about-title--transparent {
-    -webkit-text-fill-color: transparent; /* Will override color (regardless of order) */
-    -webkit-text-stroke-width: 1px;
-    -webkit-text-stroke-color: #8d8d8d;
-    font-size: rem(260);
-    font-weight: 200;
-  }
-  .about-title--white {
-    font-size: rem(260);
-    font-weight: 200;
-  }
+}
 
-  .about-title--gray {
-    color: rgba(141, 141, 141, 1);
-  }

@@ -1,7 +1,11 @@
+@use "sass:math";
 // font-size
 $default-root-font-size:10;
 
 // breakpoints
-$min-desktop-size: 1024;
-$base-desktop-size: 1440;
-$base-desktop-height:1024;
+$min-desktop-size: 1024px;
+$base-desktop-size: 1440px;
+$base-desktop-height:1024px;
+$max-desktop-size: 1920px;
+$max-desktop-height:1280px;
+$diff-height:  math.div(strip-units($max-desktop-height),strip-units($base-desktop-height));

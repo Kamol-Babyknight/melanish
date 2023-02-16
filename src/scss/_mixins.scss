@@ -5,7 +5,13 @@
 }
 
 @mixin scalable-height {
-  @media (min-width: $min-desktop-size) and (max-width: $base-desktop-size){
+  @media (min-width: $min-desktop-size) and (max-width: $max-desktop-size) {
+    @content;
+  }
+}
+
+@mixin limit-height {
+  @media (min-height: $max-desktop-height) {
     @content;
   }
 }

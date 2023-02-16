@@ -1,0 +1,29 @@
+.about-title {
+    font-family: "nymphatrial";
+    color: rgba(255, 255, 255, 1);
+    font-size: rem(220);
+    font-weight: 400;
+    z-index: 1;
+  }
+  .about-title--transparent {
+    -webkit-text-fill-color: transparent; /* Will override color (regardless of order) */
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: #8d8d8d;
+    font-size: rem(260);
+    font-weight: 200;
+  }
+  .about-title--transparent {
+    -webkit-text-fill-color: transparent; /* Will override color (regardless of order) */
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: #8d8d8d;
+    font-size: rem(260);
+    font-weight: 200;
+  }
+  .about-title--white {
+    font-size: rem(260);
+    font-weight: 200;
+  }
+  
+  .about-title--gray {
+    color: rgba(141, 141, 141, 1);
+  }
