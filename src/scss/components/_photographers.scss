@@ -1,0 +1,21 @@
+.photographers {
+  position: absolute;
+  top: rem(239);
+  overflow: hidden;
+  height: rem(750);
+  width: 100%;
+  left: 0;
+  @include scalable-height{
+    top: vh(239);
+    height: vh(750);
+  }
+
+  @include limit-height{
+    top: px(239, $diff-height);
+    height: px(750, $diff-height);
+  }
+}
+.photographers__wrap {
+  display: flex;
+  justify-content: space-between;
+}

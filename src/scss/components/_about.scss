@@ -1,0 +1,26 @@
+.about {
+  background-image: url("/images/about-cover.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.about__title-wrap {
+  position: absolute;
+  top: rem(312);
+  display: flex;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 1;
+}
+.about__main-img-wrap {
+  width: rem(1268);
+  height: rem(844);
+  margin: 0 auto;
+  z-index: 0;
+  display: flex;
+  
+  @include scalable-height{
+    
+  }
+}
+

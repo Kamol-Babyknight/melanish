@@ -1,0 +1,18 @@
+@use "sass:math";
+
+@function rem($value, $base: $default-root-font-size) {
+  @return math.div(strip-units($value), strip-units($base)) * 1rem;
+}
+
+@function vw($value, $base: $base-desktop-size) {
+  @return math.div(strip-units($value), strip-units($base)) * 100vw;
+}
+
+@function vh($value, $base: $base-desktop-height) {
+  @return math.div(strip-units($value), strip-units($base)) * 100vh;
+}
+@function px($value, $coefficient: 1) {
+  @return (strip-units($value) * strip-units($coefficient)) * 1px;
+}
+
+

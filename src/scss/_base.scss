@@ -1,0 +1,89 @@
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  box-sizing: border-box;
+  font-size: ($default-root-font-size) * 1px;
+
+  @include scalable-desktop {
+    font-size: vw($default-root-font-size);
+  }
+  
+}
+html,
+body {
+  min-height: 100%;
+  width: 100%;
+  display: block;
+}
+h1{
+  margin: 0;
+}
+@font-face {
+  font-family: "nymphatrial";
+  src: url("/fonts/Nympha_Trial/WOFF2/NymphaTrial-Regular.woff2")
+      format("woff2"),
+    url("/fonts/Nympha_Trial/WOFF/NymphaTrial-Regular.woff") format("woff");
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face {
+  font-family: "sfprodisplay";
+  src: url("/fonts/SFProDisplay/WOFF/SFProDisplay-Medium.woff2") format("woff2"),
+    url("/fonts/SFProDisplay/WOFF/SFProDisplay-Medium.woff") format("woff");
+  font-weight: 500;
+  font-style: normal;
+}
+.site-container {
+  min-height: 100vh;
+  background-image: url("/images/background-cover.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+img {
+  width: 100%;
+  height: auto;
+}
+
+.logo__img {
+  width: rem(170);
+  height: rem(24);
+  transform: translateX(rem(12));
+}
+
+.visually-hidden {
+  color: #ffffff;
+}
+
+.underlined {
+  text-decoration: underline;
+}
+
+/* код для About */
+.site-wrap {
+  overflow: hidden;
+}
+
+.editorial__hero-wrap {
+  margin-top: rem(449);
+  margin-bottom:rem(93);
+}
+
+.visually-hidden {
+  position: absolute;
+  width: rem(1);
+  height: rem(1);
+  margin: rem(-1);
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
