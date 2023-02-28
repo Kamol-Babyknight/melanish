@@ -15,4 +15,8 @@
   @return (strip-units($value) * strip-units($coefficient)) * 1px;
 }
 
+@function vmin($value, $base: $min-mobile-screen) {
+  @return math.div(strip-units($value), strip-units($base)) * 100vmin;
+}
+
 

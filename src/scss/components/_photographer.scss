@@ -13,6 +13,11 @@
     height: px(133, $diff-height);
     font-size: px(120, $diff-height);
   }
+
+  @include mobile {
+    top: rem(270);
+    font-size: rem(70);
+  }
 }
 .photographer__name {
   font-size: rem(120);
@@ -24,6 +29,9 @@
   }
   @include limit-height{
     font-size: px(120,$diff-height);
+  }
+  @include mobile{
+    font-size: rem(70);
   }
 }
 .photographer__name-wrap--large {
@@ -38,6 +46,11 @@
     top: px(440,$diff-height);
     left: px(-45,$diff-height);
   }
+  @include mobile{
+    top: rem(250);
+    left: rem(-10);
+    font-size: rem(80);
+  }
 }
 .photographer__name--large {
   font-size: rem(154);
@@ -48,6 +61,9 @@
   @include limit-height{
     font-size: px(154,$diff-height);
   }
+  @include mobile{
+    font-size: rem(80);
+  }
 }
 .photographer__img {
   height: rem(518);
@@ -57,6 +73,10 @@
   }
   @include limit-height{
     height: px(518,$diff-height);
+  }
+  @include mobile{
+    height: rem(300);
+    width: rem(250);
   }
 }
 .photographer{
@@ -72,9 +92,15 @@
   @include limit-height{
     right: px(300,$diff-height);
   }
+  @include mobile {
+    right: 0;
+  }
 }
 .photographer--2 {
   position: relative;
+  @include mobile{
+    margin: 0 rem(80);
+  }
 }
 
 .photographer--3 {
@@ -85,6 +111,9 @@
   }
   @include limit-height{
     left: px(200,$diff-height);
+  }
+  @include mobile{
+    left: 0;
   }
 }
 .photographer-info {
@@ -98,6 +127,11 @@
   font-family: "sfprodisplay";
   font-weight: 400;
   font-size: rem(18);
+
+  @include mobile{
+    padding: 0 rem(10);
+    font-size: rem(10);
+  }
 }
 .photographer-info__wrap {
   max-width: rem(1280);
@@ -106,6 +140,11 @@
   justify-content: space-between;
   margin: 0 auto;
   padding: 0 rem(20);
+
+
+  @include mobile{
+    padding: 0 rem(10);
+  }
 }
 .photographer-info__label {
   display: flex;
@@ -114,6 +153,9 @@
   color: rgba(242, 242, 242, 1);
   font-weight: 400;
   font-size: rem(18);
+  @include mobile{
+    font-size: rem(10);
+  }
 }
 .photographer-info__number {
   display: flex;

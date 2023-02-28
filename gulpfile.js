@@ -8,9 +8,8 @@ import htmlmin from "gulp-htmlmin";
 import concat from "gulp-concat";
 import autoprefixer from "gulp-autoprefixer";
 import sync from "browser-sync";
-
-
 const sass = gulgSass(dartSass);
+
 
 sync.create();
 
@@ -55,10 +54,12 @@ function watch() {
     server: "./dist",
   });
   gulp.watch("src/**/**.html", gulp.series(html)).on("change", sync.reload);
-  gulp.watch("src/scss/**/**.scss", gulp.series(scss)).on("change", sync.reload);
+  gulp
+    .watch("src/scss/**/**.scss", gulp.series(scss))
+    .on("change", sync.reload);
   gulp.watch("src/images/**/*.*", gulp.series(images));
 }
 
-export const build = gulp.series(clear,fonts, images, html, scss);
+export const build = gulp.series(clear, fonts, images, html, scss,);
 
 export const serve = gulp.series(build, watch);

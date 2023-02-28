@@ -32,6 +32,8 @@
   },
   "type": "module",
   "dependencies": {
+    "aos": "^3.0.0-beta.6",
+    "gulp-gh-pages": "^0.5.4",
     "normalize.css": "^8.0.1"
   },
   "keywords": [],

@@ -14,8 +14,16 @@
     top: px(239, $diff-height);
     height: px(750, $diff-height);
   }
+
+  @include mobile{
+    top: rem(150);
+    height: rem(500);
+  }
 }
 .photographers__wrap {
   display: flex;
   justify-content: space-between;
+  @include mobile{
+    justify-content: center;
+  }
 }
