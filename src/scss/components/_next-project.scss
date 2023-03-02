@@ -1,46 +1,75 @@
 .next-project__wrap {
-    position: relative;
+  position: relative;
+}
+.next-project__img {
+  position: relative;
+}
+.next-project__img--1 {
+  width: rem(410.5);
+  height: rem(505);
+  z-index: 3;
+  transform: rotate(-4.05deg);
+  top: rem(191);
+  left: rem(516);
+  @include mobile {
+    width: rem(150);
+    height: rem(200);
+    left: rem(100);
+    top: rem(-400);
   }
-  .next-project__img{
-    position: relative;
-  }
-  .next-project__img--1 {
-    width: rem(410.5);
-    height: rem(505);
-    z-index: 3;
-    transform: rotate(-4.05deg);
-    top: rem(191);
-    left: rem(516);
-  }
-  .next-project__img--2 {
-    width: rem(357);
-    height: rem(439);
-    z-index: 2;
-    transform: rotate(6.92deg);
-    bottom: rem(339);
-    left: rem(268);
-  }
-  .next-project__img--3 {
-    width: rem(357);
-    height: rem(439);
-    z-index: 1;
-    transform: rotate(-8.2deg);
-    bottom: rem(665);
-    left: rem(807);
-  }
-  .next-project__name {
-    display: flex;
-    position: relative;
-    z-index: 4;
-    bottom: rem(1009);
+}
+.next-project__img--2 {
+  width: rem(357);
+  height: rem(439);
+  z-index: 2;
+  transform: rotate(6.92deg);
+  bottom: rem(339);
+  left: rem(268);
+
+  @include mobile {
+    width: rem(150);
+    height: rem(200);
+    bottom: rem(600);
     left: rem(10);
   }
-  .next-project__text {
-    color: #ffffff;
-    font-family: "nymphatrial";
-    font-weight: 200;
-    font-size: rem(154);
-    line-height: rem(181);
-    display: flex;
-    margin: 0 auto;
+}
+.next-project__img--3 {
+  width: rem(357);
+  height: rem(439);
+  z-index: 1;
+  transform: rotate(-8.2deg);
+  bottom: rem(665);
+  left: rem(807);
+  @include mobile {
+    width: rem(150);
+    height: rem(200);
+    bottom: rem(780);
+    left: rem(200);
   }
+}
+
+.next-project__name {
+  display: flex;
+  position: relative;
+  z-index: 4;
+  bottom: rem(1009);
+  left: rem(10);
+  @include mobile {
+    bottom: rem(950);
+    left: 0;
+  }
+}
+
+.next-project__text {
+  color: #ffffff;
+  font-family: "nymphatrial";
+  font-weight: 200;
+  font-size: rem(154);
+  line-height: rem(181);
+  display: flex;
+  margin: 0 auto;
+  @include mobile {
+    font-size: rem(64);
+    line-height: rem(81);
+  }
+}

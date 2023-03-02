@@ -27,7 +27,7 @@
           </div>
         </nav>
       </header>
-      <section class="photographers" >
+      <section class="photographers">
         <div class="photographers__wrap" data-aos="zoom-out">
           <div class="photographer photographer--1">
             <div class="photographer__img">
@@ -68,8 +68,11 @@
             </div>
           </div>
         </div>
-        <div class="photographer-info" data-aos="fade-up"
-        data-aos-anchor-placement="top-bottom">
+        <div
+          class="photographer-info"
+          data-aos="fade-up"
+          data-aos-anchor-placement="top-bottom"
+        >
           <div class="photographer-info__wrap">
             <h2 class="photographer-info__label">PHOTOGRAPHER</h2>
             <div class="photographer-info__number">
@@ -87,7 +90,11 @@
 
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
     <script>
-      AOS.init();
+      AOS.init({
+        disable: "mobile",
+        startEvent: "DOMContentLoaded",
+        once: true,
+      });
     </script>
   </body>
 </html>
