@@ -5,17 +5,17 @@
   position: relative;
 }
 .next-project__img--1 {
-  width: rem(410.5);
+  width: rem(410);
   height: rem(505);
   z-index: 3;
   transform: rotate(-4.05deg);
   top: rem(191);
   left: rem(516);
   @include mobile {
-    width: rem(150);
-    height: rem(200);
+    width: rem(129);
+    height: rem(159);
     left: rem(100);
-    top: rem(-400);
+    
   }
 }
 .next-project__img--2 {
@@ -27,9 +27,9 @@
   left: rem(268);
 
   @include mobile {
-    width: rem(150);
-    height: rem(200);
-    bottom: rem(600);
+    width: rem(112);
+    height: rem(138);
+    top: rem(20);
     left: rem(10);
   }
 }
@@ -41,9 +41,9 @@
   bottom: rem(665);
   left: rem(807);
   @include mobile {
-    width: rem(150);
-    height: rem(200);
-    bottom: rem(780);
+    width: rem(112);
+    height: rem(138);
+    bottom: rem(80);
     left: rem(200);
   }
 }
@@ -55,7 +55,7 @@
   bottom: rem(1009);
   left: rem(10);
   @include mobile {
-    bottom: rem(950);
+    bottom: rem(200);
     left: 0;
   }
 }

@@ -8,8 +8,9 @@ import htmlmin from "gulp-htmlmin";
 import concat from "gulp-concat";
 import autoprefixer from "gulp-autoprefixer";
 import sync from "browser-sync";
+import webpackStream from "webpack-stream";
+import webpackConfig from "./webpack.config.js";
 const sass = gulgSass(dartSass);
-
 
 sync.create();
 
@@ -20,13 +21,19 @@ export function html() {
       include({
         prefix: "@@",
       })
-    )
+    ) 
     .pipe(
       htmlmin({
         collapseWhitespace: true,
       })
     )
     .pipe(gulp.dest("dist"));
+}
+
+export function scripts() {
+  return gulp.src(webpackConfig.entry.main) 
+  .pipe(webpackStream(webpackConfig))
+  .pipe(gulp.dest(webpackConfig.output.path));
 }
 
 export function scss() {
@@ -57,9 +64,10 @@ function watch() {
   gulp
     .watch("src/scss/**/**.scss", gulp.series(scss))
     .on("change", sync.reload);
-  gulp.watch("src/images/**/*.*", gulp.series(images));
+  gulp.watch("src/js/**.js", gulp.series(scripts)).on("change", sync.reload);
+  gulp.watch("src/images/**/*.*", gulp.series(images)).on("change", sync.reload);
 }
 
-export const build = gulp.series(clear, fonts, images, html, scss,);
+export const build = gulp.series(clear, fonts, images, html, scss, scripts);
 
 export const serve = gulp.series(build, watch);

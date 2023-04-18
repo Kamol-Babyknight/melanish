@@ -2,13 +2,19 @@
   position: absolute;
   height: rem(133);
   top: rem(460);
+  left: 0;
+  width: rem(550);
+  text-align: center;
+  @media (max-width:768px) {
+    width: 300px;
+  }
   @include scalable-height {
     height: vh(133);
     top: vh(460);
     font-size: vh(120);
   }
 
-  @include limit-height{
+  @include limit-height {
     top: px(460, $diff-height);
     height: px(133, $diff-height);
     font-size: px(120, $diff-height);
@@ -17,6 +23,7 @@
   @include mobile {
     top: rem(270);
     font-size: rem(70);
+    width: rem(245);
   }
 }
 .photographer__name {
@@ -24,98 +31,49 @@
   color: rgba(255, 255, 255, 1);
   font-family: "nymphatrial";
   font-weight: 400;
-  @include scalable-height{
+  @include scalable-height {
     font-size: vh(120);
   }
-  @include limit-height{
-    font-size: px(120,$diff-height);
+  @include limit-height {
+    font-size: px(120, $diff-height);
   }
-  @include mobile{
+  @include mobile {
     font-size: rem(70);
   }
 }
-.photographer__name-wrap--large {
-  top: rem(440);
-  left: rem(-45);
-
-  @include scalable-height {
-    top: vh(440);
-    left: vh(-45);
-  }
-  @include limit-height{
-    top: px(440,$diff-height);
-    left: px(-45,$diff-height);
-  }
+.photographer{
+  width: rem(550);
+  position: relative;
   @include mobile{
-    top: rem(250);
-    left: rem(-10);
-    font-size: rem(80);
+    width: rem(245);
   }
-}
-.photographer__name--large {
-  font-size: rem(154);
-
-  @include scalable-height {
-    font-size: vh(154);
-  }
-  @include limit-height{
-    font-size: px(154,$diff-height);
-  }
-  @include mobile{
-    font-size: rem(80);
+  @media (max-width:768px) {
+    width: 300px;
   }
 }
 .photographer__img {
   height: rem(518);
+  width: rem(411);
+  margin: 0 auto;
   display: flex;
   @include scalable-height {
     height: vh(518);
+    width: vh(411);
   }
-  @include limit-height{
-    height: px(518,$diff-height);
-  }
-  @include mobile{
-    height: rem(300);
-    width: rem(250);
-  }
-}
-.photographer{
-  flex-shrink: 0;
-}
-
-.photographer--1 {
-  position: relative;
-  right: rem(300);
-  @include scalable-height {
-    right: vh(300);
-  }
-  @include limit-height{
-    right: px(300,$diff-height);
+  @include limit-height {
+    height: px(518, $diff-height);
+    width: px(411, $diff-height);
   }
   @include mobile {
-    right: 0;
+    height: rem(310);
+    width: rem(246);
   }
 }
-.photographer--2 {
-  position: relative;
-  @include mobile{
-    margin: 0 rem(80);
-  }
+.photographer {
+  flex-shrink: 0;
+  margin: 0 auto;
 }
 
-.photographer--3 {
-  position: relative;
-  left: rem(200);
-  @include scalable-height {
-    left: vh(200);
-  }
-  @include limit-height{
-    left: px(200,$diff-height);
-  }
-  @include mobile{
-    left: 0;
-  }
-}
 .photographer-info {
   width: 100%;
   display: flex;
@@ -128,7 +86,7 @@
   font-weight: 400;
   font-size: rem(18);
 
-  @include mobile{
+  @include mobile {
     padding: 0 rem(10);
     font-size: rem(10);
   }
@@ -141,8 +99,7 @@
   margin: 0 auto;
   padding: 0 rem(20);
 
-
-  @include mobile{
+  @include mobile {
     padding: 0 rem(10);
   }
 }
@@ -153,7 +110,7 @@
   color: rgba(242, 242, 242, 1);
   font-weight: 400;
   font-size: rem(18);
-  @include mobile{
+  @include mobile {
     font-size: rem(10);
   }
 }

@@ -16,14 +16,19 @@
   }
 
   @include mobile{
-    top: rem(150);
-    height: rem(500);
+    top: 0;
+    height: 100%;
+    overflow: visible;
   }
 }
 .photographers__wrap {
-  display: flex;
-  justify-content: space-between;
   @include mobile{
-    justify-content: center;
+    min-height: rem(330);
+    overflow: hidden;
+    position: absolute;
+    left: 0;
+    width: 100%;
+    top: 50%;
+    transform: translateY(-50%);
   }
 }

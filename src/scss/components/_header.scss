@@ -34,11 +34,9 @@
   }
 }
 .header__info-wrap {
-  width: rem(102);
-  height: rem(18);
-
-  @include mobile{
-    width: rem(52);
+  @include desktop{
+    width: rem(102);
+    height: rem(18);
   }
 }
 .header__connection {

@@ -16,8 +16,8 @@
     margin-left: rem(86);
     @include mobile{
       margin-bottom: rem(80);
-      width: rem(300);
-      height: rem(207);
+      width: rem(324);
+      height: rem(223);
       margin-left: rem(36);
     }
   }
@@ -26,8 +26,8 @@
     height: rem(707);
     margin-left: rem(326);
     @include mobile{
-      width: rem(300);
-      height: rem(207);
+      width: rem(324);
+      height: rem(223);
       margin-left: rem(36);
     }
   }
@@ -39,8 +39,8 @@
     margin-bottom: rem(279);
     @include mobile{
       margin-top: rem(80);
-      width: rem(300);
-      height: rem(207);
+      width: rem(324);
+      height: rem(223);
       margin-left: rem(36);
       margin-bottom: rem(80);
     }
@@ -51,8 +51,8 @@
     margin-left: rem(777);
     margin-bottom: rem(-337);
     @include mobile{
-      width: rem(175);
-      height: rem(300);
+      width: rem(181);
+      height: rem(279);
       margin-left: rem(175);
       margin-bottom: rem(20);
     }
@@ -63,8 +63,8 @@
     height: rem(886);
     margin-bottom: rem(-243);
     @include mobile{
-      width: rem(175);
-      height: rem(300);
+      width: rem(181);
+      height: rem(279);
       margin-left: rem(36);
       margin-bottom: rem(20);
     }
@@ -74,8 +74,8 @@
     width: rem(575);
     height: rem(886);
     @include mobile{
-      width: rem(175);
-      height: rem(300);
+      width: rem(181);
+      height: rem(279);
       margin-left: rem(175);
     }
   }
@@ -86,6 +86,7 @@
     overflow: hidden;
     @include mobile{
       margin-bottom: rem(100);
+      min-height: px(500);
     }
   }
   .preview-slider__titles {
@@ -106,6 +107,11 @@
     left: rem(450);
     position: absolute;
     top: rem(85);
+    @include mobile{
+      width: rem(162);
+      top: rem(150);
+      left: rem(20);
+    }
   }
   .preview-slider__img--2 {
     width: rem(561);
@@ -114,6 +120,11 @@
     left: rem(1335);
     position: absolute;
     top: rem(95);
+    @include mobile{
+      width: rem(561 * 0.3);
+      left: rem(200);
+      top: rem(150);
+    }
   }
 
   .preview__photo {
@@ -125,6 +136,7 @@
     width:100%;
     text-align:center;
     @include mobile{
-      top: rem(1000);
+      top: 0;
+      position:relative;
     }
   }
