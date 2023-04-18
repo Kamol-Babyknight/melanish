@@ -10,12 +10,18 @@
     font-weight: 100;
     font-size: rem(16);
     text-transform: uppercase;
+    @include mobile{
+      font-size: rem(12);
+    }
   }
   .members__performer-name {
     font-family: "nymphatrial";
     color: #d6d0ce;
     font-weight: 100;
     font-size: rem(24);
+    @include mobile{
+      font-size: rem(16);
+    }
   }
   .members {
     width: rem(584);
@@ -24,4 +30,8 @@
     margin: 0 auto;
     justify-content: space-between;
     margin-bottom: rem(274);
+    @include mobile{
+      width: rem(350);
+      margin-bottom: rem(150);
+    }
   }

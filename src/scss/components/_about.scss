@@ -3,14 +3,17 @@
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
+  overflow-x: hidden;
 }
 .about__title-wrap {
   position: absolute;
   top: rem(312);
-  display: flex;
-  left: 50%;
-  transform: translateX(-50%);
+  width: 100%;
+  text-align: center;
   z-index: 1;
+  @include mobile{
+    top: rem(150);
+  }
 }
 .about__main-img-wrap {
   width: rem(1268);
@@ -19,8 +22,9 @@
   z-index: 0;
   display: flex;
   
-  @include scalable-height{
-    
+  @include mobile{
+    height: rem(265);
+    width: rem(400);
   }
 }
 

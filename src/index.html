@@ -5,14 +5,19 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="/css/styles.css" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"
+    />
     <title>Contact Page</title>
   </head>
   <body>
     <div class="site-container">
-      <header class="header">
+      <header class="header" data-aos="fade-down">
         <nav class="header__nav">
           <div class="header__info-wrap">
-            <a href="#" class="header__info">about</a>
+            <a href="about.html" class="header__info">about</a>
           </div>
           <div class="logo">
             <img
@@ -22,63 +27,25 @@
             />
           </div>
           <div class="header__contact-wrap">
-            <a href="#" class="header__connection">contact</a>
+            <a href="contact.html" class="header__connection">contact</a>
           </div>
         </nav>
       </header>
-      <section class="photographers">
-        <div class="photographers__wrap">
-          <div class="photographer photographer--1">
-            <div class="photographer__img">
-              <img
-                class="photographer__photo"
-                src="/images/bruxells-2xjpg.jpg"
-                alt="Bruxells"
-              />
-            </div>
-            <div class="photographer__name-wrap">
-              <h2 class="photographer__name">Bruxells</h2>
-            </div>
-          </div>
-          <div class="photographer photographer--2">
-            <div class="photographer__img">
-              <img
-                class="photographer__photo"
-                src="/images/melanie-2x.jpg"
-                alt="Melanie"
-              />
-            </div>
-            <div class="photographer__name-wrap photographer__name-wrap--large">
-              <h2 class="photographer__name photographer__name--large">Melanie</h2>
-            </div>
-          </div>
-          <div class="photographer photographer--3">
-            <div class="photographer__img">
-              <img
-                class="photographer__photo"
-                src="/images/problem-2x.jpg"
-                alt="Problem"
-              />
-            </div>
-            <div class="photographer__name-wrap">
-              <h2 class="photographer__name">Problem</h2>
-            </div>
-          </div>
-        </div>
-        <div class="photographer-info">
-          <div class="photographer-info__wrap">
-            <h2 class="photographer-info__label">PHOTOGRAPHER</h2>
-            <div class="photographer-info__number">
-              <span class="photographer-info__number-current">05</span>
-              <span class="photographer-info__number-amount">/</span>
-              <span class="photographer-info__number-total">13</span>
-            </div>
-          </div>
-        </div>
-      </section>
+      @@include('components/photographer.html')
       <footer class="site-footer">
         <h2 class="visually-hidden">index footer</h2>
       </footer>
     </div>
+
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init({
+        disable: "mobile",
+        startEvent: "DOMContentLoaded",
+        once: true,
+      });
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+    <script src="/js/main.bundle.js"></script>
   </body>
 </html>

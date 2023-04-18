@@ -3,30 +3,40 @@
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
+    @include mobile{
+      background-repeat: repeat;
+    }
   }
-  .contact__info {
+  .contact__content {
     position: relative;
     margin: 0 auto;
     width: rem(576);
     height: rem(454);
-    transform: translateY(35%);
+    top:rem(160);
+    @include mobile{
+      top: rem(80);
+    }
   }
-  .contact__wrap {
-    max-width: rem(576);
-    height: rem(454);
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-content: space-between;
+  .contact__content-wrap{
+    margin-bottom: rem(35);
   }
-  .contact__contact {
-    display: flex;
+  .contact__contact-text {
     font-family: "nymphatrial";
     font-weight: 400;
     font-size: rem(154);
     color: #ffffff;
-    position: relative;
-    justify-content: center;
+    text-align: center;
+    @include mobile{
+      font-size: rem(77);
+    }
+  }
+
+  .contact__mail-wrap{
+    display: flex;
+    margin-bottom: rem(129);
+    @include mobile{
+      margin-bottom: rem(45);
+    }
   }
   .contact__mail {
     font-family: "sfprodisplay";
@@ -34,11 +44,12 @@
     font-size: rem(50);
     text-decoration: none;
     color: rgba(242, 242, 242, 0.7);
-    display: flex;
-    justify-content: center;
-    position: relative;
-    bottom: rem(23);
     text-transform: uppercase;
+    width: 100%;
+    text-align: center;
+    @include mobile{
+      font-size: rem(25);
+    }
   }
 
   .contact__text {
@@ -49,6 +60,9 @@
     display: flex;
     justify-content: center;
     text-align: center;
+    @include mobile{
+      font-size: rem(12);
+    }
   }
   .contact__line {
     transform: translateY(rem(-10));

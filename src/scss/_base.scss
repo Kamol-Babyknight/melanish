@@ -13,7 +13,10 @@ html {
   @include scalable-desktop {
     font-size: vw($default-root-font-size);
   }
-  
+
+  @include mobile {
+    font-size: vmin($default-root-font-size);
+  }
 }
 html,
 body {
@@ -21,7 +24,7 @@ body {
   width: 100%;
   display: block;
 }
-h1{
+h1 {
   margin: 0;
 }
 @font-face {
@@ -51,12 +54,16 @@ img {
   height: auto;
 }
 
-.logo__img {
+.logo {
   width: rem(170);
   height: rem(24);
   transform: translateX(rem(12));
-}
 
+  @include mobile {
+    transform: translateX(rem(6));
+    width: rem(100);
+  }
+}
 .visually-hidden {
   color: #ffffff;
 }
@@ -72,7 +79,11 @@ img {
 
 .editorial__hero-wrap {
   margin-top: rem(449);
-  margin-bottom:rem(93);
+  margin-bottom: rem(93);
+  @include mobile {
+    margin-top: rem(200);
+    margin-bottom: rem(50);
+  }
 }
 
 .visually-hidden {

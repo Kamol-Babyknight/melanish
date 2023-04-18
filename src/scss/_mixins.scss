@@ -15,3 +15,16 @@
     @content;
   }
 }
+
+@mixin desktop {
+  @media (min-width: $min-desktop-size){
+    @content;
+  }
+}
+
+@mixin mobile {
+  @media (max-width: $mobile-screen){
+    @content;
+  }
+}
+
